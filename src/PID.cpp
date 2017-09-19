@@ -2,10 +2,6 @@
 #include <iostream>
 
 
-/*
- * TODO: Complete the PID class.
- */
-
 PID::PID() {}
 
 PID::~PID() {}
@@ -34,5 +30,5 @@ double PID::GetControlValue() {
 }
 
 double PID::TotalError() {
-  return 0.0;
+  return p_error_ + i_error_ + d_error_;
 }
